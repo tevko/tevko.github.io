@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Practice.IO</title>
+        <meta name="description" content="Generates a random practice item to build with HTML, Javascript, and CSS">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-38548867-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    </head>
+    <body>
+        <div class="tag">
+          On codepen, please tag pens as "PracticeIO" TESTinGG<div class="close">X</div>
+        </div>
+
+       <section class="auto-practice-generator">
+  
+            <h1 class="center"> practice.io</h1>
+            <div class="explains-the-app center">
+               Generates a random practice item to build with HTML, Javascript, and CSS
+               </div>
+            <div class="the-app center">
+            <button class="action">Hit Me</button>
+            <p class="what-to-build">
+            <span>
+            </span>
+            </p>
+            <br>
+            <div class="after">
+              <a class="action another" href="#">No thanks.</a>
+               <form action="http://codepen.io/pen/define" method="POST" target="_blank">
+
+                  <input type="hidden" name="data" value='{
+                  "title": "New Pen from PracticeIO !",
+                  "html": "<span><a href=\"http://timevko.com/practice\">Check out PracticeIO!</a></span>",
+                  "css": "span{ position: absolute;top: 1px;right: 1px; }"}' 
+                  />
+
+                  <input type="submit" value="Okay, I'll do it!" />
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="credit">
+            Built by <a href="http://timevko.com/">Tevko</a>.&nbsp; <a href="mailto:timevko@gmail.com?subject=practice.io">Suggestions?</a>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
