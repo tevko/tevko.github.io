@@ -1,12 +1,8 @@
-// Include gulp
-var gulp = require('gulp'); 
-
-// Include Our Plugins
-var jshint = require('gulp-autoprefixer');
-
-var prefix = require('gulp-autoprefixer');
-
-var browserSync = require('browser-sync');
+// Include gulp & plugins
+var gulp = require('gulp'),
+	jshint = require('gulp-autoprefixer'),
+	prefix = require('gulp-autoprefixer'),
+	browserSync = require('browser-sync');
 
 // autoprefix Task
 gulp.task('autoprefix', function() {
