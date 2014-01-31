@@ -1,0 +1,13 @@
+{
+  "name": "Practice",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "author": "tevko",
+  "description": "Pratice your skills webapp",
+  "devDependencies": {
+    "gulp": "~3.4.0",
+    "gulp-imagemin": "~0.1.4",
+    "gulp-autoprefixer": "0.0.4",
+    "browser-sync": "~0.5.3"
+  }
+}
