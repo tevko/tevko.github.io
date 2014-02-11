@@ -1,25 +1,20 @@
-// Include gulp & plugins
-var gulp = require('gulp'),
-	jshint = require('gulp-autoprefixer'),
-	prefix = require('gulp-autoprefixer'),
-	browserSync = require('browser-sync');
+// Include gulp
+var gulp = require('gulp'), 
+    prefix = require('gulp-autoprefixer'),
+    browserSync = require('browser-sync');
 
 // autoprefix Task
 gulp.task('autoprefix', function() {
-    gulp.src('./css/*.css')
+    gulp.src('css/*.css')
     .pipe(prefix())
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('css'));
 });
 
 //browser sync Task
 gulp.task('browser-sync', function() {
-    browserSync.init(['css/*.css', '*.php'], {
-	    proxy: {
-	        host: 'localhost',
-	        port: '80'
-	    }
-	});
+    browserSync.init(['css/*.css', '*.html','js/*.js']);
 });
+
 
 // Default Task
 gulp.task('default', function(){
@@ -27,8 +22,7 @@ gulp.task('default', function(){
     gulp.run('browser-sync');
 
     // Watch For Changes To Our CSS
-    gulp.watch('./css/*.css', function(){
+    gulp.watch('css/*.css', function(){
         gulp.run('autoprefix');
     });
 });
-
