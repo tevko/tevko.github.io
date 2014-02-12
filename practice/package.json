@@ -9,5 +9,8 @@
     "gulp-imagemin": "~0.1.4",
     "gulp-autoprefixer": "0.0.4",
     "browser-sync": "~0.5.3"
+  },
+  "dependencies": {
+    "gulp": "~3.5.1"
   }
 }
