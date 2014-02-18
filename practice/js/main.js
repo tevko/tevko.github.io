@@ -1,20 +1,19 @@
-
 $('button').click(function() {
-	$('button , .explains-the-app').fadeToggle().promise().done(function(){
-		$('.after , .what-to-build').fadeToggle();
-	});
+    $('button , .explains-the-app').fadeToggle().promise().done(function(){
+        $('.after , .what-to-build').fadeToggle();
+    });
 });
 
 counter = -1;
 
-var build = new Array("Build a responsive HTML email!","Build an animated card that celebrates the closest holiday!","Make a to do list app without using jQuery","Build a slideshow using HTML imports","Write a for loop in SASS!","Build a widget that adds zoom functionality to images on a page","Build an offscreen nav that slides into view when a menu icon is clicked","write an unordered HTML list in HAML, then Jade, then Slim, then Markdown, then binary (just kidding)","Write an anonymous javascript function that toggles a class on an element when it is clicked. No jQuery allowed","There are a lot of responsive image solutions out there. Build a demo using one of them","Make a CSS triangle","Using the :before psuedo element in css, make a div that has a transparent background image","Make something using CSS regions","Animate an SVG","Get an ellipsis to appear on a div that has a set width and height and more than one line of text","Find something cool on dribble and bring it to life with code", "Build a canvas element that you can draw on with your mouse","Find a slideshow online, copy the code, and add touch functionality to it","Design a logo using html and css","Build a widget that a user can paste a javascript array into. The widget should output the length of the array");
+var build = new Array("write a for loop with underscore.js","Make a demo with html and js using the stopPropogation() method","Get 20 divs to print out on the page using slim. Then use SASS to make them all have an equal height, width, and 100% border radius","Make a page with a full screen HTML5 background video","Find a new CSS grid and make a demo highlighting all of its features","Build a 3D model of earth with WebGL","Make a responsive table","Make a responsive sign in form","Make a javascript app that allows a user to paste in an ordered list, which then gets formatted into a javascript array","Make a keyframe animation in css","Build a countdown timer","Make a map using the google static maps API","Design a page that uses a windows 8 themed layout","Make a Chuck Norris fact generator. Don't use jQuery","Code your favorite superhero using css","Make a dropdown menu without javascript","Make a demo using the HTML5 geolocation API","Build a set of css loading icons","Make a graph that explains your current web development skillset","Make a sticky footer");
 
 $('button, .another').click(function(event) {
-	event.preventDefault();
-	counter = (counter + 1) % build.length;
+    event.preventDefault();
+    counter = (counter + 1) % build.length;
     $('span').text(build[counter]);
 });
 
 $('.close').click(function() {
-	$('.tag').fadeToggle();
+    $('.tag').fadeToggle();
 });
