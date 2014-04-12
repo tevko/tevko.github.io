@@ -181,7 +181,8 @@ body {
   color: white;
   background-color: #333;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  z-index: 999; }
   .main-header p {
     padding-top: 10px;
     margin: 0;
@@ -198,6 +199,24 @@ body {
       border: none; }
   .main-header.home {
     position: relative; }
+
+.btn, form {
+  font-size: 0.5em;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  border: solid white;
+  background-color: transparent;
+  outline: none;
+  display: inline-block; }
+
+form {
+  margin-left: 1em; }
+  form input {
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+    border: none; }
 
 .block-container {
   height: 100%;
@@ -229,17 +248,17 @@ body {
 
 
 .block-random {
-  background-color: navy; }
+  background-color: #262642; }
   .block-random:hover {
     background-image: url('../../assets/img/practice.png'); }
 
 .block-dribbble {
-  background-color: #4183c4; }
+  background-color: #de467f; }
   .block-dribbble:hover {
     background-image: url('../../assets/img/dribbble.png'); }
 
 .block-github {
-  background-color: #de467f; }
+  background-color: #4183c4; }
   .block-github:hover {
     background-image: url('../../assets/img/github.png'); }
 
@@ -256,7 +275,7 @@ body {
 
 .block-dribbble .suggestionApp {
   background-color: transparent; }
-.block-dribbble .btn:hover {
+.block-dribbble .btn:hover, .block-dribbble form:hover {
   background-color: #c7c7c7; }
 .block-dribbble .suggestionApp-prompts {
   margin-top: 1em; }
@@ -265,5 +284,10 @@ body {
 
 .block-github .suggestionApp {
   background-color: transparent; }
-.block-github .btn:hover {
+.block-github .btn:hover, .block-github form:hover {
   background-color: #c7c7c7; }
+
+.suggestionApp {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 1em; }
