@@ -161,8 +161,9 @@ td, th {
 *, *:before, *:after {
   box-sizing: border-box; }
 
-body {
-  overflow-x: hidden; }
+body, html {
+  overflow-x: hidden;
+  height: 100%; }
 
 .wrap {
   max-width: 1200px;
@@ -174,7 +175,8 @@ body {
   clear: both; }
 
 .pageContent {
-  position: relative; }
+  position: relative;
+  word-break: break-word; }
 
 .main-header {
   padding: 1em;
@@ -289,5 +291,4 @@ form {
 
 .suggestionApp {
   max-width: 75%;
-  margin: 0 auto;
-  padding: 1em; }
+  margin: 0 auto; }
