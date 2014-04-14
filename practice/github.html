@@ -50,7 +50,7 @@
     <script src="assets/js/main.js"></script>
     <script>
         function getGitRepo() {
-            var randomPageNumber = Math.floor(Math.random() * (499 - 1 + 1)) + 1;
+            var randomPageNumber = Math.floor(Math.random() * (10000000 - 1 + 1)) + 1;
             $.getJSON("https://api.github.com/repositories?since=" + randomPageNumber).done(function(data) {
                 var randomNumber = Math.floor(Math.random() * (99 - 1 + 1)) + 1;
                 $('.suggestionApp-content')
