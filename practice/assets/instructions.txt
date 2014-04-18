@@ -1,1 +1,0 @@
-add css, img, and js folders
